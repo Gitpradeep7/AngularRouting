@@ -1,0 +1,18 @@
+.container{
+    .links{
+        .nav{
+            display: flex;
+            gap: 20px;
+            li{
+                list-style-type: none;
+                a{
+                    padding:13px 36px;
+                    text-decoration: none;
+                    &.active{
+                        background-color: #c1fc55;
+                    }
+                }
+            }
+        }
+    }
+}

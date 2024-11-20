@@ -1,0 +1,12 @@
+.container{
+    .subcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        ul{
+            box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+            padding: 10px;
+            list-style: none;
+        }
+    }
+}
