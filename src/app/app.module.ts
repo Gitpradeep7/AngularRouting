@@ -8,19 +8,23 @@ import { UsersComponent } from './users/users.component';
 import { ShopComponent } from './shop/shop.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule} from '@angular/common/http'
+import { MaterialModule } from './material/material.module';
+import { ErrorpageComponent } from './errorpage/errorpage.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HomeComponent,
     UsersComponent,
-    ShopComponent
+    ShopComponent,
+    ErrorpageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     BrowserAnimationsModule,
-    HttpClientModule
+    HttpClientModule,
+    MaterialModule
   ],
   providers: [],
   bootstrap: [AppComponent]

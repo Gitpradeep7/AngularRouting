@@ -1,15 +1,32 @@
+.btn_login{
+    background-color: #2f6788;
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    padding: 10px 5px;
+}
 .container{
     .links{
         .nav{
+            margin: 0px;
             display: flex;
             gap: 20px;
+            flex-direction: row;
+            background-color: #06517c;
             li{
                 list-style-type: none;
+                padding:13px 36px;
                 a{
                     padding:13px 36px;
                     text-decoration: none;
+                    color: #c1fc55;
                     &.active{
-                        background-color: #c1fc55;
+                        background-color: #0c1e29;
+                        color: #a4ee1b;
+                    }
+                    &.error{
+                        background-color: #740404;
+                        color: #fafaf9;
                     }
                 }
             }

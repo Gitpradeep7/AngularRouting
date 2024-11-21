@@ -9,6 +9,8 @@ import { logout } from './authguard';
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
+ // lists = ['home','users','shop','error'];
+ lists = [{name:'Home',link:'home'},{name:'Users',link:'users'},{name:'Shop',link:'shop'},{name:'Error',link:'error'}];
   title = 'angularrouting';
   isloggin=false;
   constructor(private nt:NetworkService){}

@@ -1,11 +1,11 @@
-<button (click)="login()">login</button>
-<button (click)="logout()">logout</button>
+<div class="btn_login">
+<button mat-raised-button color="primary" (click)="login()">login</button>
+<button mat-raised-button color="warn" (click)="logout()">logout</button>
+</div>
 <div class="container">
   <div class="links">
-    <ul class="nav">
-      <li><a routerLink="home" routerLinkActive='active' >Home</a></li>
-      <li><a routerLink="users" routerLinkActive='active' >User</a></li>
-      <li><a routerLink="shop" routerLinkActive='active' >Shop</a></li>
+    <ul class="nav" >
+      <li *ngFor="let list of lists"><a [routerLink]="list.link" routerLinkActive='active'> {{list.name}}</a></li>
     </ul>
   </div>
   <router-outlet></router-outlet>
